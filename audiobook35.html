@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dream Chaser Stories — Аудиокниги</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eef2f7;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #0d3b66;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #0d3b66;
+    }
+    .audiobook {
+      margin-bottom: 60px;
+    }
+    .audiobook img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    .fregat-image {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 30px 0;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+    iframe {
+      width: 100%;
+      height: 166px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #666;
+    }
+    .intro {
+      margin-bottom: 40px;
+    }
+    #searchBar {
+      width: 100%;
+      padding: 10px;
+      margin: 20px 0;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
+  <script>
+  function searchBooks() {
+    const input = document.getElementById('searchBar').value.trim().toLowerCase();
+    const books = document.getElementsByClassName('audiobook');
+
+    for (let i = 0; i < books.length; i++) {
+      const titleElement = books[i].querySelector('h2');
+      if (!titleElement) continue;
+
+      const title = titleElement.textContent.toLowerCase();
+      if (title.includes(input)) {
+        books[i].style.display = '';
+      } else {
+        books[i].style.display = 'none';
+      }
+    }
+  }
+</script>
+
+</head>
+<body>
+
+  <header style="background-color: #0d3b66; color: white; padding: 20px 20px 20px 120px; position: relative;">
+  <img src="logo_dreamchaser.png" alt="Эмблема Dream Chaser"
+       style="position: absolute; top: 0; left: 0; height: 100%; max-height: 100px; padding: 10px;" />
+  <h1>Dream Chaser Stories</h1>
+  <p>Аудиокниги о путешествиях, море и приключениях</p>
+</header>
+
+<main>
+  <h1>35. Не балласт, а сложный парус. Когда на кону всё</h1>
+  <div class="audiobook">
+    <img src="imiges/anton_parus.png" alt="Не балласт, а сложный парус. Когда на кону всё" style="max-width:100%; border-radius:10px; margin-bottom:20px;" />
+    <p style="line-height: 1.6; margin-bottom: 20px;">
+Семья на волнах: пикник под дождем
+Рассказ из серии Dream Chaser Stories
+
+«Не балласт, а сложный парус. Когда на кону всё»:
+
+На ночной вахте трое мужчин — Марк, Алексей и Антон — переживают сложный, но искренний разговор. Марк делится с Алексеем своей усталостью от общения с Антоном, которого считает слишком чувствительным. Алексей тоже признаёт, что быть рядом с Антоном непросто, но подчёркивает: Антон — часть команды, пусть и сложная, как парус, но необходимая.
+
+Неожиданно Антон слышит часть их разговора и воспринимает это как предательство. Он обвиняет себя, хочет уйти, считает себя «балластом». Алексей и Марк убеждают его в обратном: он важен, его ценят, и никто не собирается его бросать. Разговор доходит до слёз, но заканчивается обниманием и искренним принятием.
+
+Антон приносит чай и печенье на палубу. Трое пьют чай, шутят, и постепенно напряжение спадает. Алексей говорит с Антоном о важности устойчивости, о том, что команда — это не про идеальность, а про готовность быть рядом несмотря ни на что. Они говорят и о жизни вне моря — о дочерях Антона, о несправедливости, о полиции, о боли, которую нужно научиться держать внутри, чтобы идти дальше.
+
+Рассвет наступает, и на вахту выходит следующая смена. Антон, обретя уверенность, тепло обнимает товарищей и говорит им, что любит их. Он впервые говорит это не в слезах, а с силой. Команда становится не просто экипажем — семьёй.
+
+Это история о хрупкости, принятии, взрослении и настоящей мужской поддержке.
+</p>
+
+<iframe src="https://archive.org/embed/20250710_20250710_0839" width="500" height="140" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+
+    <a href="index.html" style="
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #0d3b66;
+      color: white;
+      font-size: 1.1em;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    " 
+    onmouseover="this.style.backgroundColor='#145da0'; this.style.transform='translateY(-2px)'"
+    onmouseout="this.style.backgroundColor='#0d3b66'; this.style.transform='none'">
+      ← Вернуться на главную
+    </a>
+  </div>
+</main>
+
+  <footer style="background-color: #0d3b66; color: white; text-align: center; padding: 20px; font-size: 0.9em;">
+  &copy; 2025 Dream Chaser Project
+</footer>
+
+
+</body>
+</html>

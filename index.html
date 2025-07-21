@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dream Chaser Stories — Аудиокниги</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eef2f7;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #0d3b66;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #0d3b66;
+    }
+    .audiobook {
+      margin-bottom: 60px;
+    }
+    .audiobook img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    .fregat-image {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 30px 0;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+    iframe {
+      width: 100%;
+      height: 166px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #666;
+    }
+    .intro {
+      margin-bottom: 40px;
+    }
+    #searchBar {
+      width: 100%;
+      padding: 10px;
+      margin: 20px 0;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
+  <script>
+  function searchBooks() {
+  const input = document.getElementById('searchBar').value.trim().toLowerCase();
+  const buttons = document.querySelectorAll('.book-button');
+
+  buttons.forEach(btn => {
+    const title = btn.textContent.toLowerCase();
+    btn.style.display = title.includes(input) ? 'block' : 'none';
+  });
+}
+</script>
+</head>
+<body>
+
+  <header style="background-color: #0d3b66; color: white; padding: 20px 20px 20px 120px; position: relative;">
+  <img src="logo_dreamchaser.png" alt="Эмблема Dream Chaser"
+       style="position: absolute; top: 0; left: 0; height: 100%; max-height: 100px; padding: 10px;" />
+  <h1>Dream Chaser Stories</h1>
+  <p>Аудиокниги о путешествиях, море и приключениях</p>
+</header>
+>
+
+
+  <main>
+    <input type="text" id="searchBar" onkeyup="searchBooks()" placeholder="Поиск по названию аудиокниги..." />
+
+    <img src="imiges/fregat_cover.jpg" alt="Dream Chaser - старинная яхта" class="fregat-image">
+
+    <div class="intro">
+      <h2>О проекте Dream Chaser Stories</h2>
+      <p>
+        Dream Chaser Stories — это цикл аудиорассказов о морских приключениях и жизни героев на борту уникальной парусной яхты Dream Chaser, построенной в стиле старинного фрегата. Каждая история — самостоятельная и не связана с другими, но объединена образом отважного капитана Алексея и его команды.
+      </p>
+      <p>
+        Алексей окончил школу шкиперов в возрасте 21 года. После учёбы он и его команда работали в судоходных компаниях, чтобы накопить средства на свою мечту. Своими силами они построили яхту, которую назвали Dream Chaser, и отправились в кругосветное путешествие. Алексей и Александра поженились перед самым началом этого пути. Их ждало множество испытаний и трудностей, но спустя два года они завершили кругосветку и вернулись в Сочи. После этого Алексей получил статус капитана дальнего плавания.
+      </p>
+      <p>
+        Вдохновлённые своим опытом, команда решила использовать Dream Chaser для организации безалкогольных круизов по Европе и другим регионам. Все истории, представленные здесь, рассказывают об этих путешествиях.
+      </p>
+      <p>
+        Алексей категорически против алкоголя и курения. Он сам не употребляет алкоголь вообще, лишь однажды пробовал шампанское в молодости. В кругосветке на яхте Dream Chaser был введён полный запрет на алкоголь. После кругосветного плавания яхта использовалась в экспедициях для наркологических центров и в религиозных сообществах (в том числе мусульманских), где алкоголь запрещён. Все круизы проходят строго в духе здорового образа жизни.
+      </p>
+      <p>
+        Почти вся команда поддерживает взгляды капитана. Сергей был воспитан в строгости и не пьёт. Единственный, кто изредка позволяет себе алкоголь — это штурман Владислав. В редкие дни он мог появиться навеселе, что вызывало раздражение Алексея.
+      </p>
+      <p>
+        Команду Алексея составляют:
+        <ul>
+          <li><strong>Александра</strong> — жена Алексея, познакомились во время учёбы в школе шкиперов;</li>
+          <li><strong>Алёна</strong> — их дочь;</li>
+          <li><strong>Максим</strong> — сын, родился во время кругосветки;</li>
+          <li><strong>Евгений</strong> — старший помощник, женат на Марине, двоюродной сестре Алексея и их  дочка Катя</li>
+          <li><strong>Владислав</strong> — штурман, женат на Анастасии. Познакомились во время студенческой практики на Dream Chaser, отец близнецов Артёма и Стаса;</li>
+          </li><strong>Данила</strong> — второй помощник, женат на Екатерине, отец Миши и Саши. Самый молодой в каманде;</li>
+          <li><strong>Сергей</strong> — механик, женат на Юле и их сын Руслан. Познакомились во время круизов. Он с характером, но отлично знает своё дело;</li>
+          <li><strong>Антон</strong> — рулевой с тяжёлой судьбой. Когда его старшей дочери Полине было 5 лет, он попал в тюрьму, где у него родилась вторая дочь Соня, умершая в раннем возрасте. Позже они с женой Кариной, на которой он женился во время кругосветки в консульстве Италии, удочерили девочку из детдома — также Соню. Со временем выяснилось, что она была его родной дочерью. Сейчас Антон вместе с дочками Соней и Юлей ведёт видеоблог на YouTube и работает над двумя проектами.</li>
+          <li><strong>Марк</strong> — брат-близнец Антона, разлучённый в роддоме. Нашёл брата в 45 лет благодаря телевидению. Марк по характеру резкий, строптивый, но справедливый. Присоединился к Dream Chaser вместе с женой Луисой и дочерьми-близняшками Софией и Леонорой.</li>
+          <li><strong>Иван</strong> — врач на борту Dream Chaser;</li>
+          <li><strong>Иван</strong> — повар (кок) на борту Dream Chase;</li>
+          <li><strong>Елена</strong> — фотограф на борту Dream Chaser. Инвалид, передвигается с помощью костылей. Команда познакомилась с ней во время кругосветки, где она проявила отвагу, и капитан Алексей пригласил её в команду.;</li>
+         <style>
+  .book-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+  .book-button {
+    display: block;
+    background-color: #0d3b66;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+
+  .book-button:hover {
+    background-color: #145da0;
+  }
+</style>
+
+<div class="book-list">
+ <div class="audiobook-list">
+
+  <h2>А</h2>
+  <a href="audiobook23.html" class="book-button">Антон не соврал. Хотя мог</a>
+
+  <h2>Б</h2>
+  <a href="audiobook30.html" class="book-button">Байки рулевого</a>
+  <a href="audiobook1.html" class="book-button"> Безалкогольный пиратский круиз</a>
+  <a href="audiobook22.html" class="book-button">Бегство Антона во время опасности</a>
+  <a href="audiobook38.html" class="book-button">Благотворительный круиз для близняшек</a>
+  <a href="audiobook7.html" class="book-button">Близнецы на Dream Chaser Антон и Марк одинаковые, но разные</a>
+  <a href="audiobook3.html" class="book-button">Брат-близнец Антона. Марк из Италии. Спустя 45 лет</a>
+  <a href="audiobook45.html" class="book-button">Бунт Максима на яхте “Dream Chaser"</a>
+
+  <h2>В</h2>
+  <a href="audiobook9.html" class="book-button">Вдохновлённые близнецы  Антон и Марк на борту Dream Chaser</a>
+  <a href="audiobook8.html" class="book-button">Вино не льётся — байки льются</a>
+  <a href="audiobook13.html" class="book-button">Вторая жизнь Антона. Родная. Навсегда</a>
+
+  <h2>Г</h2>
+  <a href="audiobook5.html" class="book-button">География с Антоном и Юлей</a>
+  <a href="audiobook29.html" class="book-button">География спасения</a>
+
+  <h2>Д</h2>
+  <a href="audiobook6.html" class="book-button">Демон Скеттино внутри Антона</a>
+  <a href="audiobook19.html" class="book-button">Детский круиз</a>
+  <a href="audiobook14.html" class="book-button">Dream Chaser и Штандарт два корабля — одна душа</a>
+  <a href="audiobook15.html" class="book-button">Dream Chaser антипод Concordia</a>
+  <a href="audiobook43.html" class="book-button">Дядя Марк и география</a>
+
+  <h2>И</h2>
+  <a href="audiobook24.html" class="book-button">Итальянский день в России Романтика капитана</a>
+  <a href="audiobook16.html" class="book-button">Испытание океаном и островом</a>
+  <a href="audiobook46.html" class="book-button">Испытание капитана два часа без сына</a>
+  <a href="audiobook47.html" class="book-button">Испытание диктатом Капитан или Тиран</a>
+
+  <h2>К</h2>
+  <a href="audiobook17.html" class="book-button">Капитан Алексей, спасший детство</a>
+  <a href="audiobook37.html" class="book-button">Капитан без рома и сигар</a>
+  <a href="audiobook40.html" class="book-button">Капитан и его дочь между страхом и надеждой</a>
+  <a href="audiobook41.html" class="book-button">Капитан-зачинщик бунта</a>
+  <a href="audiobook26.html" class="book-button">Как капитан организовал круиз для своей дочки и её класса</a>
+  <a href="audiobook28.html" class="book-button">Как Руслан стал морским волком байка Антона с глубиной</a>
+  <a href="audiobook12.html" class="book-button">Корабль без капитана</a>
+
+  <h2>Н</h2>
+  <a href="audiobook27.html" class="book-button">Ночной круиз, который навсегда остался в его сердце</a>
+  <a href="audiobook35.html" class="book-button">Не балласт, а сложный парус. Когда на кону всё</a>
+
+  <h2>П</h2>
+  <a href="audiobook39.html" class="book-button">Палуба перемен</a>
+  <a href="audiobook44.html" class="book-button">Палуба страстей на «Dream Chaser»</a>
+  <a href="audiobook25.html" class="book-button">Первые рейсы: студенты у штурвала</a>
+  <a href="audiobook2.html" class="book-button">Под парусом чужих денег</a>
+  <a href="audiobook42.html" class="book-button">Попутный ветер дружбы или Якорь дружбы</a>
+  <a href="audiobook32.html" class="book-button">Полина, ты моё море</a>
+
+  <h2>Р</h2>
+  <a href="audiobook4.html" class="book-button">Ром без алкоголя — сердце с теплом</a>
+
+  <h2>С</h2>
+  <a href="audiobook34.html" class="book-button">Семья на волнах, пикник под дождем</a>
+
+  <h2>Т</h2>
+  <a href="audiobook33.html" class="book-button">Трезвый путь. Восстановление Антона через путешествие по мусульманским странам</a>
+
+  <h2>У</h2>
+  <a href="audiobook10.html" class="book-button">Братья-близнецы Антон и Марк, уснувшие на вахте</a>
+
+  <h2>Э</h2>
+  <a href="audiobook18.html" class="book-button">Эмоции капитана, или Курс на мечту</a>
+  <a href="audiobook20.html" class="book-button">Экзамен для Алёны уроки на волнах</a>
+
+  <h2>Ц</h2>
+  <a href="audiobook31.html" class="book-button">Цена любви Антона к его дочери Полине</a>
+
+  <h2>Ш</h2>
+  <a href="audiobook21.html" class="book-button">Шторм под килем</a>
+  <a href="audiobook36.html" class="book-button">Штурвал трезвости капитана Алексея</a>
+
+</div>
+
+
+     </main>
+
+  <footer style="background-color: #0d3b66; color: white; text-align: center; padding: 20px; font-size: 0.9em;">
+  &copy; 2025 Dream Chaser Project
+</footer>
+
+
+</body>
+</html>

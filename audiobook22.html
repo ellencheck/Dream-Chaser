@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dream Chaser Stories — Аудиокниги</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eef2f7;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #0d3b66;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #0d3b66;
+    }
+    .audiobook {
+      margin-bottom: 60px;
+    }
+    .audiobook img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    .fregat-image {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 30px 0;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+    iframe {
+      width: 100%;
+      height: 166px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #666;
+    }
+    .intro {
+      margin-bottom: 40px;
+    }
+    #searchBar {
+      width: 100%;
+      padding: 10px;
+      margin: 20px 0;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
+  <script>
+  function searchBooks() {
+    const input = document.getElementById('searchBar').value.trim().toLowerCase();
+    const books = document.getElementsByClassName('audiobook');
+
+    for (let i = 0; i < books.length; i++) {
+      const titleElement = books[i].querySelector('h2');
+      if (!titleElement) continue;
+
+      const title = titleElement.textContent.toLowerCase();
+      if (title.includes(input)) {
+        books[i].style.display = '';
+      } else {
+        books[i].style.display = 'none';
+      }
+    }
+  }
+</script>
+
+</head>
+<body>
+
+  <header style="background-color: #0d3b66; color: white; padding: 20px 20px 20px 120px; position: relative;">
+  <img src="logo_dreamchaser.png" alt="Эмблема Dream Chaser"
+       style="position: absolute; top: 0; left: 0; height: 100%; max-height: 100px; padding: 10px;" />
+  <h1>Dream Chaser Stories</h1>
+  <p>Аудиокниги о путешествиях, море и приключениях</p>
+</header>
+
+<main>
+  <h1>22. Бегство Антона во время опасности</h1>
+  <div class="audiobook">
+    <img src="imiges/ship_fire.webp" alt="Обложка аудиокниги Бегство Антона во время опасности" style="max-width:100%; border-radius:10px; margin-bottom:20px;" />
+    <p style="line-height: 1.6; margin-bottom: 20px;">
+«Бегство Антона во время опасности»
+Это напряжённая психологическая драма о молодом человеке по имени Антон, который мечтал стать капитаном, но оказался не готов к главному — к ответственности. Сначала он небрежно допускает пожар на борту яхты, затем пытается скрыть свою вину, врёт капитану и команде, теряя доверие и уважение. Всё это кажется простыми ошибками… пока история не переходит в трагедию: уже работая шкипером на катамаране, Антон покидает судно во время шторма, оставляя пассажиров — и одна из них, пятилетняя девочка, погибает.
+
+Книга раскрывает внутреннюю борьбу героя: страх, стыд, желание искупить вину, но и неумение признать правду вовремя. Через мощные диалоги, напряжённые сцены и финальный суд, история заставляет задуматься о цене лжи и о том, почему капитан — это не просто должность, а прежде всего ответственность за жизни других.
+
+📌 Если вам интересны истории о моральных выборах, мужестве и последствиях малодушия — эта аудиокнига точно тронет вас.</p>
+
+<iframe 
+    src="https://archive.org/embed/2._20250705" 
+    width="100%" 
+    height="140" 
+    frameborder="0" 
+    webkitallowfullscreen 
+    mozallowfullscreen 
+    allowfullscreen>
+  </iframe>
+
+    <a href="index.html" style="
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #0d3b66;
+      color: white;
+      font-size: 1.1em;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    " 
+    onmouseover="this.style.backgroundColor='#145da0'; this.style.transform='translateY(-2px)'"
+    onmouseout="this.style.backgroundColor='#0d3b66'; this.style.transform='none'">
+      ← Вернуться на главную
+    </a>
+  </div>
+</main>
+
+  <footer style="background-color: #0d3b66; color: white; text-align: center; padding: 20px; font-size: 0.9em;">
+  &copy; 2025 Dream Chaser Project
+</footer>
+
+
+</body>
+</html>
